@@ -128,7 +128,7 @@ span {
   height: 75vh;
   min-height: 420px;
   width: 100%;
-  background-image: url(hero-banner.png);
+  background-image: url('/hero-banner.png');
   background-size: cover;
   background-position: center;
   position: relative;
