@@ -42,6 +42,17 @@ body {
   color: var(--text-primary);
 }
 
+
+
+::-webkit-scrollbar{
+  width: 0px;
+  background: transparent;
+}
+*{
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
 a {
   text-decoration: none;
 }
@@ -276,7 +287,11 @@ span {
     0 20px 50px rgba(0, 0, 0, 0.65),
     inset 0 1px 0 rgba(255, 255, 255, 0.18);
 }
-
+.loading-txt{
+  color: #c084fc;
+  padding: 2rem;
+  text-align: center;
+}
 .card img {
   width: 100%;
   aspect-ratio: 2/3;
