@@ -1,16 +1,28 @@
-# React + Vite
+# NoirFlix — Movie Explorer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+NoirFlix is a fast, responsive movie discovery platform built with **React**, **Vite**, and pure **CSS3**, fetching real-time data from the **TMDB API**. It allows users to explore trending releases, discover top-rated cinema, search titles dynamically, and dive into comprehensive movie details including cast lists and official YouTube trailers.
 
-Currently, two official plugins are available:
+🔗 **Live Demo:** [noirfflix.netlify.app](https://noirfflix.netlify.app)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Dynamic Hero & Curated Feeds:** Browse real-time sections for *Trending This Week*, *Most Popular*, and *Top Rated* movies.
+- **Instant Search:** Search across TMDB's extensive library with direct query results.
+- **Dedicated Movie Details Page:** Click on any card to view runtime, release date, user rating, genre tags, storyline overview, and key cast members.
+- **Trailer Integration:** Direct YouTube redirect button for official movie trailers.
+- **Zero UI Libraries:** Clean, custom-written vanilla CSS with smooth hover effects, poster cards, and mobile-friendly layouts.
+- **Client-Side Routing:** Seamless page navigation via React Router without page reloads.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Tech Stack
+
+- **Frontend Library:** React (Vite)
+- **Routing:** React Router DOM
+- **Styling:** Vanilla CSS (Custom flex/grid design system)
+- **API:** The Movie Database (TMDB) API
+- **Deployment:** Netlify
+
+---
