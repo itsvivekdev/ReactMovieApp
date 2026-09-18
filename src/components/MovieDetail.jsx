@@ -14,7 +14,7 @@ const MovieDetail = () => {
   async function fetchMovieDetail() {
     try {
       const res = await fetch(
-        `https://api.themoviedb.org/3/movie/${id}?api_key=${API_KEY}`
+        `/api/movie/${id}?api_key=${API_KEY}`
       );
       const data = await res.json();
       setmovie(data);
@@ -26,7 +26,7 @@ const MovieDetail = () => {
   async function fetchMovieCast() {
     try {
       const res = await fetch(
-        `https://api.themoviedb.org/3/movie/${id}/credits?api_key=${API_KEY}`
+        `/api/movie/${id}/credits?api_key=${API_KEY}`
       );
       const data = await res.json();
       setcast(data.cast || []);
@@ -38,7 +38,7 @@ const MovieDetail = () => {
   async function fetchMovieTrailer() {
     try {
       const res = await fetch(
-        `https://api.themoviedb.org/3/movie/${id}/videos?api_key=${API_KEY}`
+        `/api/movie/${id}/videos?api_key=${API_KEY}`
       );
       const data = await res.json();
       const trailerData = (data.results || []).find(

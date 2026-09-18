@@ -28,7 +28,7 @@ const Home = () => {
     setloader(true);
     try {
       const res = await fetch(
-        `https://api.themoviedb.org/3/search/movie?api_key=${API_KEY}&query=${input}`
+        `/api/search/movie?api_key=${API_KEY}&query=${input}`
       );
       const data = await res.json();
 
@@ -53,7 +53,7 @@ const Home = () => {
   async function fetchTrendingMovies() {
     try {
       const res = await fetch(
-        `https://api.themoviedb.org/3/trending/movie/day?api_key=${API_KEY}`
+        `/api/trending/movie/day?api_key=${API_KEY}`
       );
       const data = await res.json();
       settrendingmovies(data.results || []);
@@ -65,7 +65,7 @@ const Home = () => {
   async function fetchTopratedmovies() {
     try {
       const res = await fetch(
-        `https://api.themoviedb.org/3/movie/top_rated?api_key=${API_KEY}`
+        `/api/movie/top_rated?api_key=${API_KEY}`
       );
       const data = await res.json();
       settopratedmovies(data.results || []);
@@ -77,7 +77,7 @@ const Home = () => {
   async function fetchPopularMovies() {
     try {
       const res = await fetch(
-        `https://api.themoviedb.org/3/movie/popular?api_key=${API_KEY}`
+        `/api/movie/popular?api_key=${API_KEY}`
       );
       const data = await res.json();
       setpopularmovies(data.results || []);
